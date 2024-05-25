@@ -15,9 +15,9 @@ const Navbar = () => {
   const [open, setOpen] = useState(false);
 
   return (
-    <div className="h-full flex items-center justify-between px-4 sm:px-8 md:px-12 lg:px-20 xl:px-48 text-xl">
+    <div className="h-full flex items-center justify-between px-4 sm:px-8 md:px-12 lg:px-20 xl:px-10 text-xl pt-10">
       {/* LOGO */}
-      <div className="md:hidden lg:flex xl:w-1/3 xl:justify-center">
+      <div className="md:hidden lg:flex xl:w-1/3 xl:justify-start xl:pl-5">
         <a className="flex title-font font-medium items-center md:justify-start justify-center text-gray-900">
           <Image src="/searchi.png" alt="" width={54} height={54} />
           <span className="ml-3 text-xl">SearchiStore</span>

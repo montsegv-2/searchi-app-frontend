@@ -3,19 +3,19 @@ import Link from "next/link";
 
 const Homepage = () => {
   return (
-    <div className="lg:mx-auto flex flex-col lg:flex-row px-4 sm:px-8 md:px-12 lg:px-20 xl:px-48 text-xl justify-center items-center pt-50">
+    <div className="lg:mx-auto flex flex-col lg:flex-row px-4 sm:px-8 md:px-12 lg:px-20 xl:px-8 text-xl justify-center items-center pt-20 pb-20">
       {/* TEXT CONTAINER */}
       <div className="h-1/2 lg:h-full lg:w-1/2 flex flex-col gap-8 items-center justify-center md:text-left">
         {/* TITLE */}
-        <span className="text-4xl md:text-5xl font-bold text-black">
+        <span className="text-4xl md:text-6xl font-bold text-black">
           Search and find your favorite stores with{" "}
-          <span className="bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 bg-clip-text text-transparent text-4xl md:text-5xl font-bold pt-0 mt-0 md:text-left">
+          <span className="bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 bg-clip-text text-transparent text-4xl md:text-6xl font-bold pt-0 mt-0 md:text-left">
             SearchiStore
           </span>
         </span>
 
         {/* DESCRIPTION */}
-        <p className="md:text-xl lg:text-left">
+        <p className="md:text-2xl lg:text-left">
           Discover a seamless way to locate your favorite stores, no matter
           where you are.
         </p>
