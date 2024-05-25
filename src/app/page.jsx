@@ -3,7 +3,7 @@ import Link from "next/link";
 
 const Homepage = () => {
   return (
-    <div className="lg:mx-auto flex flex-col lg:flex-row px-4 sm:px-8 md:px-12 lg:px-20 xl:px-8 text-xl justify-center items-center pt-20 pb-20">
+    <div className="lg:mx-auto flex flex-col lg:flex-row px-4 sm:px-8 md:px-12 lg:px-20 xl:px-8 text-xl justify-center items-center pt-10 pb-20">
       {/* TEXT CONTAINER */}
       <div className="h-1/2 lg:h-full lg:w-1/2 flex flex-col gap-8 items-center justify-center md:text-left">
         {/* TITLE */}
@@ -15,9 +15,11 @@ const Homepage = () => {
         </span>
 
         {/* DESCRIPTION */}
-        <p className="md:text-2xl lg:text-left">
+        <p className="md:text-2xl lg:text-left text-justify">
           Discover a seamless way to locate your favorite stores, no matter
-          where you are.
+          where you are. Whether you're planning a shopping spree or just need
+          to find a nearby store quickly, SerchiStore has got you covered with
+          an intuitive and user-friendly interface.
         </p>
         {/* BUTTONS */}
         <div className="flex gap-4 pb-5 justify-start">
