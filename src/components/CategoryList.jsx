@@ -18,8 +18,8 @@ const CategoryList = () => {
       </h2>
       {category ? (
         <div className="flex gap-6 mb-5">
-          {category?.map((item) => (
-            <div key={item.name}>
+          {category?.map((item, index) => (
+            <div key={index}>
               <CategoryItem category={item} />
             </div>
           ))}
