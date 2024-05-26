@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import Image from "next/image";
 import { useState } from "react";
 
@@ -20,11 +21,13 @@ const SideNavBar = () => {
 
   return (
     <div
-      className={`gap-1 items-center flex flex-col 
+      className={`gap-1 p-4 items-center flex flex-col 
   w-[90px] space-y-4 shadow-md shadow-purple-200
   h-screen sticky top-0 bg-white z-20`}
     >
-      <Image src="/searchi.png" alt="logo" width={50} height={50} />
+      <Link href="/">
+        <Image src="/searchi.png" alt="logo" width={50} height={50} />
+      </Link>
 
       {menu.map((item, index) => (
         <svg

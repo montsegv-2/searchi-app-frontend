@@ -1,7 +1,17 @@
-import Mapa from "@/components/mapa";
+"useclient";
+
+import CategoryList from "@/components/CategoryList";
+import SearchBar from "@/components/searchBar";
 
 const Locations = () => {
-  return <div className="">que onda</div>;
+  return (
+    <div className="">
+      <div>
+        <SearchBar />
+        <CategoryList />
+      </div>
+    </div>
+  );
 };
 
 export default Locations;

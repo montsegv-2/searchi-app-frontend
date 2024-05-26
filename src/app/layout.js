@@ -1,5 +1,4 @@
 import Footer from "@/components/footer";
-import Navbar from "@/components/navbar";
 import { Montserrat } from "next/font/google";
 import "./globals.css";
 
@@ -21,13 +20,11 @@ export default function RootLayout({ children }) {
       </head>
       <body className={inter.className}>
         <script src="https://api.mapbox.com/mapbox-gl-js/v3.3.0/mapbox-gl.js"></script>
-
-        <div className="w-full h-full bg-white">
-          <div className="h-24">
-            <Navbar />
-          </div>
+        <div className="grid bg-white">
           <div className="h-[calc(100vh - 6rem)]">{children}</div>
-          <Footer />
+          <div className="">
+            <Footer />
+          </div>
         </div>
       </body>
     </html>
