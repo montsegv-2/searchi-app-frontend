@@ -18,8 +18,8 @@ const Homepage = () => {
         <p className="md:text-2xl lg:text-left text-justify">
           Discover a seamless way to locate your favorite stores, no matter
           where you are. Whether you're planning a shopping spree or just need
-          to find a nearby store quickly, SerchiStore has got you covered with
-          an intuitive and user-friendly interface.
+          to find a nearby store quickly, Searchi has got you covered with an
+          intuitive and user-friendly interface.
         </p>
         {/* BUTTONS */}
         <div className="flex gap-4 pb-5 justify-start">

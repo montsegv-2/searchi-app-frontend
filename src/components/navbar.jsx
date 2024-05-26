@@ -35,10 +35,12 @@ const Navbar = () => {
       <div className="h-full flex items-center justify-between px-4 sm:px-8 md:px-12 lg:px-20 xl:px-10 text-xl pt-2 border-b-2 sticky header">
         {/* LOGO */}
         <div className="md:hidden lg:flex xl:w-1/3 xl:justify-start xl:pl-5">
-          <a className="flex title-font font-medium items-center md:justify-start justify-center text-gray-900">
-            <Image src="/searchi.png" alt="" width={64} height={64} />
-            <span className="ml-3 text-xl">SearchiStore</span>
-          </a>
+          <Link href={"/"}>
+            <div className="flex title-font font-medium items-center md:justify-start justify-center text-gray-900">
+              <Image src="/searchi.png" alt="" width={64} height={64} />
+              <span className="ml-3 text-xl">SearchiStore</span>
+            </div>
+          </Link>
         </div>
         {/* LINKS */}
         <div className="hidden md:flex gap-4 w-1/3 items-center justify-center">
