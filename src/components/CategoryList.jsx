@@ -2,7 +2,7 @@
 
 import Data from "@/Shared/Data";
 import { useEffect, useState } from "react";
-import CategoryItem from "./CategoryItem";
+import CategoryItem from "./categoryItem";
 
 const CategoryList = () => {
   const [category, setCategory] = useState();

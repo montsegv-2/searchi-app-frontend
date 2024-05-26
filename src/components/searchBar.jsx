@@ -3,7 +3,7 @@
 const SearchBar = () => {
   return (
     <div
-      className="flex gap-3 bg-purple-100
+      className="flex gap-3 bg-pink-100
     p-3 rounded-xl items-center"
     >
       <svg
@@ -12,7 +12,7 @@ const SearchBar = () => {
         viewBox="0 0 24 24"
         strokeWidth={1.5}
         stroke="currentColor"
-        className="w-6 h-6 text-purple-400"
+        className="w-6 h-6 text-pink-400"
       >
         <path
           strokeLinecap="round"
@@ -24,7 +24,7 @@ const SearchBar = () => {
         type="text"
         placeholder="Search"
         onKeyDown={(e) => e.key === "Enter"}
-        className="bg-transparent outline-none w-full text-[17px] placeholder-purple-400"
+        className="bg-transparent outline-none w-full text-[17px] placeholder-pink-400"
       />
     </div>
   );

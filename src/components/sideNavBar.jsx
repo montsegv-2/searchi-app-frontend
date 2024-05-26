@@ -22,7 +22,7 @@ const SideNavBar = () => {
   return (
     <div
       className={`gap-1 p-4 items-center flex flex-col 
-  w-[90px] space-y-4 shadow-md shadow-purple-200
+  w-[90px] space-y-4 shadow-md shadow-pink-200
   h-screen sticky top-0 bg-white z-20`}
     >
       <Link href="/">
@@ -38,10 +38,10 @@ const SideNavBar = () => {
           strokeWidth={1.5}
           stroke="currentColor"
           onClick={() => setActiveIndex(index)}
-          className={`w-10 h-10 hover:text-purple-500
-          hover:bg-purple-100
+          className={`w-10 h-10 hover:text-pink-500
+          hover:bg-pink-100
           p-2 cursor-pointer rounded-lg ${
-            index == activeIndex ? "text-purple-500 bg-purple-100" : null
+            index == activeIndex ? "text-pink-500 bg-pink-100" : null
           }`}
         >
           <path strokeLinecap="round" strokeLinejoin="round" d={item.logo} />
