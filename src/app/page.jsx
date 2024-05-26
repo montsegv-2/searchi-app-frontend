@@ -4,7 +4,7 @@ import Link from "next/link";
 
 const Homepage = () => {
   return (
-    <div className="h-24">
+    <div className="flex flex-col h-full">
       <Navbar />
       <div className="lg:mx-auto flex flex-col lg:flex-row px-4 sm:px-8 md:px-12 lg:px-20 xl:px-8 text-xl justify-center items-center pt-10 pb-20">
         {/* TEXT CONTAINER */}
