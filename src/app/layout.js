@@ -20,8 +20,8 @@ export default function RootLayout({ children }) {
       </head>
       <body className={inter.className}>
         <script src="https://api.mapbox.com/mapbox-gl-js/v3.3.0/mapbox-gl.js"></script>
-        <div className="grid bg-white">
-          <div className="h-[calc(100vh - 6rem)]">{children}</div>
+        <div className="min-h-screen flex flex-col">
+          <div className="flex-grow">{children}</div>
           <div className="">
             <Footer />
           </div>
