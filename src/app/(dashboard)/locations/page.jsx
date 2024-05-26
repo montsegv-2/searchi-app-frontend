@@ -1,11 +1,7 @@
 import Mapa from "@/components/mapa";
 
 const Locations = () => {
-  return (
-    <div className="w-auto h-auto">
-      <Mapa />
-    </div>
-  );
+  return <div className="">que onda</div>;
 };
 
 export default Locations;

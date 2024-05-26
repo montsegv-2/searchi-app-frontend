@@ -1,13 +1,18 @@
+import Mapa from "@/components/mapa";
 import SideNavBar from "@/components/sideNavBar";
 
 export default function DashboardLayout({ children }) {
   return (
-    <main>
-      <div className="flex flex-col h-screen">
-        <div className="h-24">
-          <SideNavBar />
+    <main className="flex">
+      <SideNavBar />
+
+      <div className="grid grid-cols-1 md:grid-cols-2 px-6 md:px-10 w-full mt-10">
+        {/* BUSINESS LIST */}
+        <div>{children}</div>
+        {/* GOOGLE MAP */}
+        <div>
+          <Mapa />
         </div>
-        <div className="h-[calc(100vh - 6rem)]">{children}</div>
       </div>
     </main>
   );

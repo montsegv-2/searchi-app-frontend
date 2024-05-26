@@ -20,9 +20,9 @@ const SideNavBar = () => {
 
   return (
     <div
-      className={`p-2 items-center flex flex-col 
-  w-[80px] space-y-4 shadow-md shadow-purple-400
-  h-screen sticky top-0 bg-white z-20 `}
+      className={`gap-1 items-center flex flex-col 
+  w-[90px] space-y-4 shadow-md shadow-purple-200
+  h-screen sticky top-0 bg-white z-20`}
     >
       <Image src="/searchi.png" alt="logo" width={50} height={50} />
 

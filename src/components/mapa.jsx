@@ -10,7 +10,7 @@ const Mapa = () => {
     const map = new mapboxgl.Map({
       container: "map", // container ID
       center: [-103.8078849, 19.2107321],
-      zoom: 15,
+      zoom: 14,
     });
   };
 
@@ -19,8 +19,8 @@ const Mapa = () => {
   }, []);
 
   return (
-    <div className="w-full h-screen">
-      <div id="map" className="w-full h-full"></div>
+    <div className="w-full h-ful">
+      <div id="map" style={{ width: "600px", height: "600px" }}></div>
     </div>
   );
 };
