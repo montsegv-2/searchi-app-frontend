@@ -1,5 +1,5 @@
-import CategoryList from "@/components/categoryList";
 import Mapa from "@/components/mapa";
+import CategoryList from "@/components/categoryList";
 import SearchBar from "@/components/searchBar";
 import StoreList from "@/components/storeList";
 
@@ -9,7 +9,6 @@ const Locations = () => {
       <div className="grid grid-cols-1 md:grid-cols-2 px-6 md:px-10 mt-10 gap-8">
         <div>
           <SearchBar />
-          <CategoryList />
           <StoreList />
         </div>
         <div>
