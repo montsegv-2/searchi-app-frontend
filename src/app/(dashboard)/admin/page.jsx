@@ -30,6 +30,9 @@ const Admin = () => {
     <div>
       <h2 className="text-[20px] mt-3 font-bold mb-3 flex items-center justify-between">
         Listings of your stores
+        <span className="bg-pink-200 px-3 py-1 rounded-xl">
+          {stores.length}
+        </span>
         <div>
           <button className="bg-black text-white px-7 py-2 rounded-2xl hover:bg-pink-400">
             Add store
@@ -77,9 +80,10 @@ const Admin = () => {
         {isLoading ? (
           <p>Loading...</p>
         ) : (
-          currentStores.map((store) => (
+          currentStores.map((store, item) => (
             <EditStore
-              key={store._id}
+              key={item}
+              id={store._id}
               name={store.name}
               address={store.address}
               image={store.image}

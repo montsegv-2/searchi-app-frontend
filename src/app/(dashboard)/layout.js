@@ -8,11 +8,8 @@ export default function DashboardLayout({ children }) {
       <SideNavBar />
 
       <div className="grid grid-cols-1 md:grid-cols-2 px-6 md:px-10 w-full mt-10 gap-8">
-        {/* BUSINESS LIST */}
         <div>{children}</div>
-        {/* GOOGLE MAP */}
         <div>
-          {/* <Mapa /> */}
           <Mapa />
         </div>
       </div>
