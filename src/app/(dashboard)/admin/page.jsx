@@ -27,7 +27,7 @@ const Admin = () => {
   );
 
   return (
-    <div className="">
+    <div>
       <h2 className="text-[20px] mt-3 font-bold mb-3 flex items-center justify-between">
         Listings of your stores
         <div>

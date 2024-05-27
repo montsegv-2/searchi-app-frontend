@@ -14,7 +14,7 @@ const EditStore = ({ name, address, image }) => {
         alt="business-img"
         width={90}
         height={90}
-        className="rounded-xl object-cover h-[150px] w-[300px]"
+        className="rounded-xl object-cover h-[150px] w-[170px]"
         loader={loaderProp}
         unoptimized
         priority
