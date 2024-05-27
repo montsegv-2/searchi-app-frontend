@@ -2,19 +2,26 @@
 
 import Image from "next/image";
 
-const StoreItem = () => {
+const StoreItem = ({ name, address, image }) => {
+  const loaderProp = ({ src }) => {
+    return src;
+  };
+
   return (
     <div className="flex gap-4 p-3 border-b-[1px] border-purple-200 mb-4 items-center ">
       <Image
-        src="/placeholder.jpg"
+        src={image}
         alt="business-img"
         width={90}
         height={90}
         className="rounded-xl object-cover h-[100px] w-[100px]"
+        loader={loaderProp}
+        unoptimized
+        priority
       />
       <div>
-        <h2 className="text-[20px] font-semibold">Business name</h2>
-        <h2 className="text-[15px] text-gray-500">Address</h2>
+        <h2 className="text-[20px] font-semibold">{name}</h2>
+        <h2 className="text-[15px] text-gray-500">{address}</h2>
         <div className="flex gap-2 items-center">
           <svg
             xmlns="http://www.w3.org/2000/svg"

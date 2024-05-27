@@ -1,10 +1,24 @@
 "use client";
 
-import { useState } from "react";
+import { getStores } from "@/services/StoresService";
+import { useEffect, useState } from "react";
 import StoreItem from "./storeItem";
 
 const StoreList = () => {
   const [pointer, setPointer] = useState(0);
+  const [stores, setStores] = useState([]);
+  const [isLoading, setIsLoading] = useState(true);
+
+  const getAllStores = async () => {
+    const allStores = await getStores();
+
+    setStores([...allStores]);
+    setIsLoading(false);
+  };
+
+  useEffect(() => {
+    getAllStores();
+  }, [isLoading]);
 
   return (
     <div>
@@ -47,9 +61,18 @@ const StoreList = () => {
         </span>
       </h2>
       <div>
-        <StoreItem />
-        <StoreItem />
-        <StoreItem />
+        {isLoading ? (
+          <p>Loading...</p>
+        ) : (
+          stores.map((store) => (
+            <StoreItem
+              key={store._id}
+              name={store.name}
+              address={store.address}
+              image={store.image}
+            />
+          ))
+        )}
       </div>
     </div>
   );
