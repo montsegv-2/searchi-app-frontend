@@ -4,7 +4,6 @@ import { useEffect } from "react";
 
 const Mapa = () => {
   const createMap = () => {
-    console.log("this is token", process.env.NEXT_PUBLIC_MAPBOX_TOKEN);
     mapboxgl.accessToken = process.env.NEXT_PUBLIC_MAPBOX_TOKEN;
 
     const map = new mapboxgl.Map({
@@ -12,6 +11,11 @@ const Mapa = () => {
       center: [-103.8078849, 19.2107321],
       zoom: 14,
     });
+
+    const marker1 = new mapboxgl.Marker({ color: "red" })
+      .setPopup(new mapboxgl.Popup().setHTML("<p>Hello</p>"))
+      .setLngLat([-103.8078849, 19.2107321])
+      .addTo(map);
   };
 
   useEffect(() => {
