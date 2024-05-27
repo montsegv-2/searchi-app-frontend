@@ -31,4 +31,5 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 
 ## Web site display
 
-![image](https://github.com/montsegv-2/searchi-app-frontend/assets/116055107/67b32319-8cde-42e6-be02-36f5bdade0a9)
+![image](https://github.com/montsegv-2/searchi-app-frontend/assets/116055107/bf8e910a-9572-4a4c-beac-d1ae490b972c)
+
