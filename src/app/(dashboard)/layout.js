@@ -7,11 +7,8 @@ export default function DashboardLayout({ children }) {
     <main className="flex">
       <SideNavBar />
 
-      <div className="grid grid-cols-1 md:grid-cols-2 px-6 md:px-10 w-full mt-10 gap-8">
+      <div className="w-full">
         <div>{children}</div>
-        <div>
-          <Mapa />
-        </div>
       </div>
     </main>
   );
