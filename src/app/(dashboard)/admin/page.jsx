@@ -110,6 +110,7 @@ const Admin = () => {
             width={900}
             height={800}
             className="object-contain"
+            priority
           />
         )}
       </div>
