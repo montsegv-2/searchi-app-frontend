@@ -10,7 +10,7 @@ const Admin = () => {
   const [pointer, setPointer] = useState(0);
   const [stores, setStores] = useState([]);
   const [isLoading, setIsLoading] = useState(true);
-  const [isAdding, setIsAdding] = useState(false); // Nuevo estado
+  const [isAdding, setIsAdding] = useState(false);
 
   const itemsPerPage = 3;
 

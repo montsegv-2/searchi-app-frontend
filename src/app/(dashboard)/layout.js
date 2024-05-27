@@ -1,5 +1,3 @@
-// import Mapa from "@/components/mapa";
-import Mapa from "@/components/mapa";
 import SideNavBar from "@/components/sideNavBar";
 
 export default function DashboardLayout({ children }) {

@@ -1,3 +1,4 @@
+//get all
 export const getStores = async () => {
   const response = await fetch(
     `${process.env.NEXT_PUBLIC_API_URL}/api/stores/`
@@ -7,8 +8,7 @@ export const getStores = async () => {
   return stores;
 };
 
-//created functions
-
+//delete
 export const deleteStore = async (id) => {
   const response = await fetch(
     `${process.env.NEXT_PUBLIC_API_URL}/api/store/${id}`,
@@ -23,4 +23,22 @@ export const deleteStore = async (id) => {
 
   const result = await response.json();
   return result;
+};
+
+// create
+export const createStore = async (storeData) => {
+  const response = await fetch(
+    `${process.env.NEXT_PUBLIC_API_URL}/api/store/`,
+    {
+      method: "POST",
+      body: JSON.stringify(storeData),
+    }
+  );
+
+  if (!response.ok) {
+    throw new Error("Failed to create the store");
+  }
+
+  const newStore = await response.json();
+  return newStore;
 };
